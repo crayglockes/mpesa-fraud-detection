@@ -1,0 +1,87 @@
+
+======================================================================
+M-PESA FRAUD DETECTION MODEL - PERFORMANCE REPORT
+======================================================================
+
+MODEL INFORMATION
+-----------------
+Algorithm: Random Forest Classifier
+Trees: 100
+Max Depth: 20
+Features: 27
+Training Method: SMOTE (Synthetic Minority Over-sampling)
+
+DATASET STATISTICS
+------------------
+Total Transactions: 6,362,620
+Training Set: 5,090,096 (80.0%)
+Test Set: 1,272,524 (20.0%)
+
+Fraud Rate (Original): 0.129%
+Fraud Cases (Train): 6,570
+Fraud Cases (Test): 1,643
+
+After SMOTE:
+  Training Set Size: 7,625,289
+  Fraud Rate: 33.3%
+
+PERFORMANCE METRICS (Test Set)
+-------------------------------
+Accuracy:           100.00%
+Precision:          99.45%
+Recall (Sensitivity): 99.76%
+F1 Score:           0.9960
+ROC AUC:            0.9994
+Average Precision:  0.9986
+
+CONFUSION MATRIX
+-----------------
+                    Predicted
+                Legit    Fraud
+Actual  Legit   1,270,872      9
+        Fraud   4      1,639
+
+INTERPRETATION
+--------------
+True Positives (TP):  1,639 fraud cases correctly identified
+False Positives (FP): 9 legitimate transactions flagged as fraud
+False Negatives (FN): 4 fraud cases missed
+True Negatives (TN):  1,270,872 legitimate transactions correctly identified
+
+False Positive Rate: 0.00%
+False Negative Rate: 0.24%
+
+TOP 5 MOST IMPORTANT FEATURES
+------------------------------
+has_error_orig                 0.2206
+error_balance_orig             0.2141
+balance_diff_orig              0.1407
+amount_to_orig_balance_ratio   0.1223
+origin_zero_after              0.0853
+
+
+BUSINESS VALUE
+--------------
+- This model can detect 99.8% of fraudulent transactions
+- For every 100 fraud cases, the model catches 99
+- Precision of 99.5% means 0.5% of alerts are false alarms
+- ROC AUC of 0.999 indicates excellent discrimination ability
+
+RECOMMENDATIONS
+----------------
+1. Deploy this model as a real-time fraud detection system
+2. Review transactions with predicted probability > 0.7 manually
+3. Monitor false positive rate to balance security vs customer experience
+4. Retrain model monthly with new fraud patterns
+5. Focus fraud prevention on TRANSFER and CASH_OUT transactions
+
+MODEL FILES
+-----------
+- Trained Model: rf_fraud_detector.joblib
+- Feature List: feature_list.csv
+- Performance Metrics: model_metrics.csv
+- Feature Importance: feature_importance.csv
+
+======================================================================
+Report Generated: 2026-02-21 12:46:18
+======================================================================

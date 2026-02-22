@@ -1,0 +1,11 @@
+Metric,Value
+Total Transactions,6362620
+Fraud Transactions,8213
+Fraud Rate (%),0.12908204481801522
+Transaction Types,5
+Date Range (steps),1 - 743
+Unique Customers (Origin),6353307
+Unique Customers (Dest),2722362
+Median Transaction Amount,74871.94
+Max Transaction Amount,92445516.64
+Missing Values,0
