@@ -3,12 +3,12 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2+-orange)](https://scikit-learn.org/)
 [![ROC AUC](https://img.shields.io/badge/ROC%20AUC-93.8%25-success)](/)
-[![Recall](https://img.shields.io/badge/Recall-87.2%25-success)](/)
+[![Recall](https://img.shields.io/badge/Recall-87.2%25-success)](/) 
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 Machine learning system detecting fraudulent M-Pesa mobile money transactions with 93.8% AUC and 87% recall. Uses Random Forest with SMOTE for imbalanced learning, achieving KES 12.5M net benefit through fraud prevention.
 
-**[📊 View Model Report](docs/model_report.txt)** | **[📈 Business Analysis](docs/business_impact_analysis.csv)** | **[🔍 Explore Notebooks](notebooks/)**
+**[📊 View Model Report](outputs/reports/model_report.txt)** | **[📈 Business Analysis](outputs/reports/business_impact_analysis.csv)** | **[🔍 Explore Notebooks](notebooks/)**
 
 ---
 
@@ -374,10 +374,10 @@ Action: BLOCK: Block transaction immediately and alert customer
 
 ## 📧 Contact & Collaboration
 
-**Author**: [Mocraig Kisali Sande]  
-**Email**: mocraigks@gmail.com  
-**LinkedIn**: [linkedin.com/in/mocraigks](URL)  
-**Portfolio**: [crayglockes.com](URL)  
+**Author**: Mocraig Kisali Sande
+**Email**: mocraigks@gmail.com
+**LinkedIn**: linkedin.com/in/mocraigks
+**Portfolio**: crayglockes.com
 
 **Collaboration Welcome**: Open to discussions on fraud detection, mobile money security, and machine learning for financial services.
 
@@ -427,8 +427,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ### 🔗 Quick Links
-- [Model Report](docs/model_report.txt)
-- [Business Analysis](docs/business_impact_analysis.csv)
-- [Feature Importance](docs/feature_importance.csv)
-- [Threshold Analysis](docs/threshold_analysis.csv)
+- [Model Report](outputs/models/model_report.txt)
+- [Business Analysis](outputs/reports/business_impact_analysis.csv)
+- [Feature Importance](outputs/reports/feature_importance.csv)
+- [Threshold Analysis](outputs/reports/threshold_analysis.csv)
 - [All Notebooks](notebooks/)
