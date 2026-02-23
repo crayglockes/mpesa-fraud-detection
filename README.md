@@ -8,7 +8,7 @@
 
 Machine learning system detecting fraudulent M-Pesa mobile money transactions with 93.8% AUC and 87% recall. Uses Random Forest with SMOTE for imbalanced learning, achieving KES 12.5M net benefit through fraud prevention.
 
-**[📊 View Model Report](outputs/reports/model_report.txt)** | **[📈 Business Analysis](outputs/reports/business_impact_analysis.csv)** | **[🔍 Explore Notebooks](notebooks/)**
+**[📊 View Model Report](outputs/models/model_report.txt)** | **[📈 Business Analysis](outputs/reports/business_impact_analysis.csv)** | **[🔍 Explore Notebooks](notebooks/)**
 
 ---
 
